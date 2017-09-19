@@ -412,7 +412,7 @@ void Sensor::loop(const MyMessage & message) {
     }
   }
   // process a float value
-  else if (_value_type == TYPE_FLOAT && total > -1) {
+  else if (_value_type == TYPE_FLOAT ) {
     // calculate the average value of the samples
     float avg = total / _samples;
     // report the value back
